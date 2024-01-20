@@ -84,7 +84,6 @@ function NavTabs({ currentPage, handlePageChange }) {
         </a>
       </li>
       <div>
-      <IconLink href="tel:7862906721" target=""><i class="fa fa-phone"></i> </IconLink>
         <IconLink href="https://twitter.com/cleanpoolsco" target="_blank"><i class="fab fa-twitter"></i></IconLink>
         <IconLink href="https://instagram.com/cleanpoolsflorida" target="_blank"><i class="fab fa-instagram"></i></IconLink>
         <IconLink href="https://facebook.com/" target="_blank"><i class="fab fa-facebook"></i></IconLink>
