@@ -1,6 +1,7 @@
 // Here we are using object destructuring assignment to pluck off our variables from the props object
 // We assign them to their own variable names
 import React from 'react';
+
 import styled from 'styled-components';
 import Footer from './pages/Footer';
 
@@ -16,20 +17,30 @@ const NavBar = styled.li`
   align-items: center; 
   padding: 15px;
   background-color: #f8f9fa;
+
+  @media (max-width: 430px){
+  display: none;
+  }
 `;
 
 const Logo = styled.img`
   max-height: 100px;
-  justify-content: flex;
-  margin-right: 65%; 
   border-radius: 20%;
+
+  @media (max-width: 430px){
+  max-height: 600px;
+  display: block;
+  margin: auto;
+  
+    
+  }
 `;
 
 function NavTabs({ currentPage, handlePageChange }) {
   return (
     <>
+    <Logo src="assets/images/logo.jpg" alt="clean pools florida Company Logo" />
     <NavBar>
-      <Logo src="assets/images/logo.jpg" alt="clean pools florida Company Logo" />
     <ul className="nav nav-tabs">
       <li className="nav-item">
         <a
@@ -73,9 +84,12 @@ function NavTabs({ currentPage, handlePageChange }) {
         </a>
       </li>
       <div>
+      <IconLink href="tel:7862906721" target=""><i class="fa fa-phone"></i> </IconLink>
         <IconLink href="https://twitter.com/cleanpoolsco" target="_blank"><i class="fab fa-twitter"></i></IconLink>
         <IconLink href="https://instagram.com/cleanpoolsflorida" target="_blank"><i class="fab fa-instagram"></i></IconLink>
         <IconLink href="https://facebook.com/" target="_blank"><i class="fab fa-facebook"></i></IconLink>
+      
+        
       </div>
     </ul>
     </NavBar>

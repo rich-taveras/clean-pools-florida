@@ -27,11 +27,24 @@ const Image = styled.img`
   margin-bottom: 30px;
 `;
 
+const IconLink = styled.a`
+  margin: 0 10px;
+  font-size: 30px;
+  color: #007bff;
+
+  @media (max-width: 430px){
+    max-height: 600px;
+    display: block;
+    margin: auto;
+`;
+
 export default function Home() {
   return (
     <Container>
+      <IconLink href="tel:7862906721" target=""><i class="fa fa-phone"></i> </IconLink>
       <Title>Clean Pools Florida</Title>
       <Subtitle>SoFlo Swimming Pools Service and Maintenace</Subtitle>
+      
       <Image src="./assets/images/resort-pool-front-page.jpg" alt="pool cleaning tools, test kit, net, chlorine floater, resort-pool-front-page" />
       
     </Container>
