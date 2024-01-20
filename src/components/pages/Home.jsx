@@ -32,7 +32,7 @@ const IconLink = styled.a`
   font-size: 30px;
   color: #007bff;
 
-  @media (max-width: 900px){
+  @media (max-width: 1900px){
     display: none;
 
   @media (max-width: 430px){
