@@ -32,6 +32,9 @@ const IconLink = styled.a`
   font-size: 30px;
   color: #007bff;
 
+  @media (max-width: 1900px){
+    display: none;
+
   @media (max-width: 430px){
     max-height: 600px;
     display: block;
@@ -42,6 +45,8 @@ export default function Home() {
   return (
     <Container>
       <IconLink href="tel:7862906721" target=""><i class="fa fa-phone"></i> </IconLink>
+      <IconLink href="tel:7862906721" target=""><i class="fa-brands fa-whatsapp"></i>
+ </IconLink>
       <Title>Clean Pools Florida</Title>
       <Subtitle>SoFlo Swimming Pools Service and Maintenace</Subtitle>
       
