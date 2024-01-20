@@ -45,7 +45,7 @@ export default function Home() {
   return (
     <Container>
       <IconLink href="tel:7862906721" target=""><i class="fa fa-phone"></i> </IconLink>
-      <IconLink href="tel:7862906721" target=""><i class="fa-brands fa-whatsapp"></i>
+      <IconLink href="https://wa.me/7862906721" target=""><i class="fa-brands fa-whatsapp"></i>
  </IconLink>
       <Title>Clean Pools Florida</Title>
       <Subtitle>SoFlo Swimming Pools Service and Maintenace</Subtitle>
